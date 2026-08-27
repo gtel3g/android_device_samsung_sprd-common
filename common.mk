@@ -16,9 +16,7 @@
 
 # Audio
 PRODUCT_PACKAGES += \
-	audio.usb.default \
-	audio.r_submix.default \
-	libtinyalsa
+	audio.r_submix.default
 
 # WiFi
 PRODUCT_PACKAGES += \
