@@ -26,8 +26,6 @@
 # SPRD hardware
 BOARD_USES_SPRD_HARDWARE := true
 
-# Graphics
-USE_OPENGL_RENDERER := true
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
