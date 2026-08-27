@@ -29,7 +29,6 @@ BOARD_USES_SPRD_HARDWARE := true
 
 # RIL
 BOARD_PROVIDES_LIBRIL := true
-BOARD_RIL_CLASS := ../../../device/samsung/sprd-common/ril
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
