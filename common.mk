@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -25,15 +24,9 @@ PRODUCT_PACKAGES += \
 
 # WiFi
 PRODUCT_PACKAGES += \
-	dhcpcd.conf \
 	wpa_supplicant \
 	wpa_supplicant.conf \
 	hostapd
-
-# Device props
-PRODUCT_PROPERTY_OVERRIDES += \
-	keyguard.no_require_sim=true \
-	ro.com.android.dataroaming=false
 
 # Compat
 PRODUCT_PACKAGES += \
@@ -73,12 +66,9 @@ PRODUCT_PACKAGES += \
 	fibmap.f2fs \
 	fsck.f2fs \
 	mkfs.f2fs \
-	setup_fs \
 
-# Misc packages
-PRODUCT_PACKAGES += \
-	com.android.future.usb.accessory \
-    
+	setup_fs
+
 # Samsung Service Mode
 PRODUCT_PACKAGES += \
 	SamsungServiceMode
