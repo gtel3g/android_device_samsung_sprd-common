@@ -16,7 +16,6 @@
 
 # Audio
 PRODUCT_PACKAGES += \
-	audio.a2dp.default \
 	audio.usb.default \
 	audio.r_submix.default \
 	libtinyalsa
@@ -35,11 +34,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mtp
 
-# Charger
-PRODUCT_PACKAGES += \
-	charger \
-	charger_res_images
-
 # Permissions
 PERMISSION_XML_FILES := \
 	frameworks/native/data/etc/handheld_core_hardware.xml \
@@ -50,7 +44,6 @@ PERMISSION_XML_FILES := \
 	frameworks/native/data/etc/android.hardware.wifi.direct.xml \
 	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.xml \
 	frameworks/native/data/etc/android.software.sip.xml \
-	frameworks/native/data/etc/android.software.sip.voip.xml \
 	frameworks/native/data/etc/android.hardware.usb.accessory.xml
 
 PRODUCT_COPY_FILES += \
