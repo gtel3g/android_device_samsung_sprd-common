@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-
 # Audio
 PRODUCT_PACKAGES += \
 	audio.a2dp.default \
@@ -59,15 +58,6 @@ PERMISSION_XML_FILES := \
 
 PRODUCT_COPY_FILES += \
 	$(foreach f,$(PERMISSION_XML_FILES),$(f):system/etc/permissions/$(notdir $(f)))
-
-# Filesystem management tools
-PRODUCT_PACKAGES += \
-	f2fstat \
-	fibmap.f2fs \
-	fsck.f2fs \
-	mkfs.f2fs \
-
-	setup_fs
 
 # Samsung Service Mode
 PRODUCT_PACKAGES += \
